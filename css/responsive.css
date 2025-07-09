@@ -3,15 +3,273 @@
   * Add the media rule and the styles that are common within the TABLET and MOBILE views
   * Add the media rule and the styles that belong to the MOBILE view only
 */
-
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+  .top-navigation .trigram {
     display: none;
-  } */
+  }
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  body {
+    width: 100%;
+  }
+  .top-navigation a:hover {
+    font-weight: bolder;
+    color: black;
+  }
+
+  .teammate-social-icons :hover {
+    background-color: darkgray;
+  }
+
+  .social-icons :hover {
+    color: white;
+  }
+
+  .social-icons .icon:hover {
+    background-color: white;
+  }
+
+  .social-icons i:hover {
+    color: black;
+  }
+
+  .social-icons .linked-in i {
+    background-color: black;
+    color: gray;
+  }
+
+  .social-icons .linked-in i:hover {
+    color: white;
+  }
+
+  .email a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  .phones a:hover {
+    text-decoration: underline;
+    color: white;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (min-width: 768px) AND (max-width: 1023px) {
+  body {
+    width: 100%;
+  }
 
+  header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid gray;
+  }
+
+  .top-navigation ul {
+    display: none;
+  }
+
+  .social-icons {
+    width: 50%;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .footer-contacts {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-contacts .phones {
+    width: 100%;
+  }
+
+  .footer-contacts .email a {
+    color: white;
+  }
+
+  .footer-contacts .phones a {
+    color: white;
+  }
+
+  footer .social-icons .icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+  }
+
+  .top-navigation .trigram {
+    justify-content: flex-end;
+  }
+
+  .top-navigation ul {
+    display: none;
+  }
+
+  .portfolio-list {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .portfolio-item {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .portfolio-item-info {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .teammates-list-wrapper {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .teammate {
+    width: 45%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .teammate-data {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .teammate-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .teammate-img-wrapper {
+    width: 100%;
+  }
+
+  .teammates-list::before,
+  .teammates-list::after {
+    display: none;
+  }
+
+  .teammate-social-icons .facebook,
+  .teammate-social-icons .twitter,
+  .teammate-social-icons .linkedin {
+    background-color: darkgray;
+  }
+
+  .social-icons span {
+    width: 0;
+    display: none;
+  }
+
+  .teammates-content .section-info .subtext {
+    width: 100%;
+  }
+}
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (max-width: 767px) {
+  .top-navigation ul {
+    display: none;
+  }
+
+  .footer-contacts .email {
+    color: white;
+  }
+
+  .portfolio-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio-item-info {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .teammates-list-wrapper {
+    flex-direction: column;
+  }
+
+  .teammate {
+    flex-direction: row;
+    border: 1px solid;
+  }
+
+  .teammate-data {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .teammate-info {
+    justify-content: center;
+  }
+
+  .teammates-list::before,
+  .teammates-list::after {
+    display: none;
+  }
+
+  .teammate-social-icons .facebook,
+  .teammate-social-icons .twitter,
+  .teammate-social-icons .linkedin {
+    background-color: darkgray;
+  }
+
+  footer .social-icons .icon {
+    color: black;
+    background-color: white;
+  }
+
+  .social-icons .linked-in i {
+    background-color: black;
+    color: white;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    color: white;
+  }
+
+  .footer-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contacts .email a {
+    color: white;
+  }
+
+  .footer-contacts .phones a {
+    color: white;
+  }
+
+  header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid gray;
+  }
+
+  .teammates-content .section-info .subtext {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+  }
+}

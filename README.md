@@ -19,10 +19,10 @@ This assignment should prove that a student is able to:
 
 ## Standard requirements
 
-- [ ] Fork the project to your github account
-- [ ] Clone the project to your computer
-- [ ] Open the project in VSCode with code <cloned_repo_folder_name>
-- [ ] This assignment does **NOT** have automated tests!
+- [x] Fork the project to your github account
+- [x] Clone the project to your computer
+- [x] Open the project in VSCode with code <cloned_repo_folder_name>
+- [x] This assignment does **NOT** have automated tests!
 - [ ] All the tasks of the "Specific requirements" section MUST be solved
 - [ ] The project's file/folder structure should NOT be edited!
 - [ ] The index.html file should NOT be edited!
@@ -37,7 +37,7 @@ This assignment should prove that a student is able to:
 
 Acceptance criteria:
 
-- [ ] The responsive HTML meta tag is set.
+- [x] The responsive HTML meta tag is set.
 - [ ] The website should replicate the mockup for desktop, tablet, and mobile views, incorporating all aspects such as fonts, font sizes, colors, paddings, margins, gaps, etc.
 - [ ] The hover styles are added for the desktop view for:
   - The top navigation items
